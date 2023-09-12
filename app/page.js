@@ -31,6 +31,18 @@ console.log(itemsData)
         className='w-28 shadow-md bg-gray-200'
         onClick={() => dispatch(incrementByAmount(2))}
       >Increment by 2</button>
+
+
+
+  <br/>
+  <div>
+<p>Map</p>
+  {itemsData?.map((topic)=>{
+    return(
+      topic.title
+      )
+    })}
+    </div>
     </main>
   );
 }
